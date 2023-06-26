@@ -1,12 +1,10 @@
-# 0x0B. SSH
+## Tasks :page_with_curl:
 
-## Description
-This project is about learning how to connect on a server using ssh.
+* **0. Use a private key**
+  * [0-use_a_private_key](./0-use_a_private_key): Bash script that uses `ssh` to connect to your server using the private key ~/.ssh/school with the user ubuntu.
+* **1. Create an SSH key pair**
+  * [1-create_ssh_key_pair](./1-create_ssh_key_pair): Bash script that creates an RSA key pair.
 
-## Table of contents
-Files | Description
------ | -----------
-[0-use_a_private_key](./0-use_a_private_key) | Bash script that uses ssh to connect to your server using the private key ~/.ssh
-[1-create_ssh_key_pair](./1-create_ssh_key_pair) | Bash script that creates an RSA key pair
-[2-ssh_config](./2-ssh_config) | SSH client configuration
-[4-puppet_ssh_config.pp](./4-puppet_ssh_config.pp) | sets up a client SSH configuration file so that we can connect to a server without using a password
+* **2. Client configuration file**
+  * [2-ssh_config](./2-ssh_config): SSH configuration file configured to use the private key
+`~/.ssh/school` and to refuse authentication using a password.
